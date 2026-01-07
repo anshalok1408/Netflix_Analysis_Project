@@ -7,96 +7,91 @@ This project transforms raw Netflix movie data into meaningful insights through 
 
 ✨ Features:
 
-Data Cleaning & Preprocessing: Handled missing values, removed duplicates, and standardized date formats
+-Data Cleaning & Preprocessing: Handled missing values, removed duplicates, and standardized date formats
 
-Exploratory Data Analysis: Statistical analysis of movie ratings, popularity scores, and vote counts
+-Exploratory Data Analysis: Statistical analysis of movie ratings, popularity scores, and vote counts
 
-Genre Analysis: Breakdown and visualization of genre distribution across the dataset
+-Genre Analysis: Breakdown and visualization of genre distribution across the dataset
 
-Popularity Segmentation: Categorized movies into Famous, Average, Below Average, and Not Popular tiers
+-Popularity Segmentation: Categorized movies into Famous, Average, Below Average, and Not Popular tiers
 
-Interactive Dashboard: Power BI dashboard for dynamic data exploration
+-Interactive Dashboard: Power BI dashboard for dynamic data exploration
 
-Trend Analysis: Release year patterns and temporal trends in movie production
+-Trend Analysis: Release year patterns and temporal trends in movie production
 
 🛠️ Tech Stack
 Programming & Libraries:
 
-Python 3.x
+-Python 3.x
 
-pandas - Data manipulation and cleaning
+-pandas - Data manipulation and cleaning
 
-NumPy - Numerical operations
+-NumPy - Numerical operations
 
-Matplotlib - Data visualization
+-Matplotlib - Data visualization
 
-Seaborn - Statistical data visualization
+-Seaborn - Statistical data visualization
 
-Business Intelligence:
+-Business Intelligence:
 
-Power BI - Interactive dashboard creation
+-Power BI - Interactive dashboard creation
 
-📁 Project Structure:
-text
-netflix-analysis/
-│
-├── mymoviedb.csv              # Original raw dataset
-├── cleaned_mymoviedb.csv      # Cleaned and processed dataset
-├── Netflix-Analysis.ipynb     # Jupyter notebook with analysis
-└── README.md                  # Project documentation
-📈 Dataset Information
+📈 Dataset Information:
 The dataset contains 9,827 movies with the following key attributes:
 
-Column	Description
-Release_Date	Movie release year
-Title	Movie title
-Popularity	Popularity score metric
-Vote_Count	Total number of user votes
-Vote_Average	Categorized rating (Famous, Average, Below Average, Not Popular)
-Genre	Movie genre(s) - exploded for multi-genre entries
+Column	Description:
+1.Release_Date	Movie release year
+2.Title	Movie title
+3.Popularity	Popularity score metric
+4.Vote_Count	Total number of user votes
+5.Vote_Average	Categorized rating (Famous, Average, Below Average, Not Popular)
+6.Genre	Movie genre(s) - exploded for multi-genre entries
 
 🔍 Key Insights:
 
 Data Cleaning Process-
-Date Conversion: Transformed Release_Date from full date format to year-only format
 
-Column Removal: Dropped non-essential columns (Overview, Original_Language, Poster_Url)
+-Date Conversion: Transformed Release_Date from full date format to year-only format
 
-Rating Categorization: Created Vote_Average categories based on popularity and vote thresholds:
+-Column Removal: Dropped non-essential columns (Overview, Original_Language, Poster_Url)
 
-Famous: High vote count (>800)
+-Rating Categorization: Created Vote_Average categories based on popularity and vote thresholds:
 
-Average: Moderate metrics
+-Famous: High vote count (>800)
 
-Below Average: Lower engagement
+-Average: Moderate metrics
 
-Not Popular: Minimal votes
+-Below Average: Lower engagement
 
-Genre Normalization: Split multi-genre entries into individual rows for granular analysis
+-Not Popular: Minimal votes
 
-Missing Value Treatment: Handled null values in critical fields
+-Genre Normalization: Split multi-genre entries into individual rows for granular analysis
 
-Statistical Summary
-Average Popularity Score: 40.33
+-Missing Value Treatment: Handled null values in critical fields
 
-Average Vote Count: 1,393 votes per movie
+Statistical Summary:
 
-Average Rating: 6.44/10
+-Average Popularity Score: 40.33
 
-Release Year Range: 1959 - 2023
+-Average Vote Count: 1,393 votes per movie
 
-Total Genres Represented: 20+ unique genres
+-Average Rating: 6.44/10
 
-Most Common Genres: Drama, Comedy, Action, Adventure, Thriller
+-Release Year Range: 1959 - 2023
 
-🚀 Getting Started
-Prerequisites
-bash
-python >= 3.7
-pandas >= 1.3.0
-numpy >= 1.21.0
-matplotlib >= 3.4.0
-seaborn >= 0.11.0
+-Total Genres Represented: 20+ unique genres
+
+-Most Common Genres: Drama, Comedy, Action, Adventure, Thriller
+
+🚀 Getting Started:
+
+-Prerequisites
+-bash
+-python >= 3.7
+-pandas >= 1.3.0
+-numpy >= 1.21.0
+-matplotlib >= 3.4.0
+-seaborn >= 0.11.0
 
 📊 Analysis Workflow:
 
@@ -108,85 +103,91 @@ df.head()
 df.info()
 df.describe()
 2. Data Cleaning
-Converted Release_Date to year format
+-Converted Release_Date to year format
 
-Removed unnecessary columns
+-Removed unnecessary columns
 
-Categorized popularity ratings
+-Categorized popularity ratings
 
-Handled missing values
+-Handled missing values
 
-Normalized genre data
+-Normalized genre data
 
 3. Exploratory Data Analysis
-Distribution analysis of popularity, votes, and ratings
 
-Genre frequency analysis
+-Distribution analysis of popularity, votes, and ratings
 
-Temporal trends in movie releases
+-Genre frequency analysis
 
-Correlation analysis between variables
+-Temporal trends in movie releases
+
+-Correlation analysis between variables
 
 4. Visualization
-Bar charts for genre distribution
+-Bar charts for genre distribution
 
-Time series plots for release trends
+-Time series plots for release trends
 
-Scatter plots for popularity vs. ratings
+-Scatter plots for popularity vs. ratings
 
-Heatmaps for correlation matrices
+-Heatmaps for correlation matrices
 
 5. Power BI Dashboard
-Created interactive dashboard with:
 
-Genre breakdown visualizations
+-Created interactive dashboard with:
 
-Release year trends
+-Genre breakdown visualizations
 
-Popularity distribution charts
+-Release year trends
 
-Top-rated movies filters
+-Popularity distribution charts
 
-Vote count analytics
+-Top-rated movies filters
 
-📸 Sample Visualizations
+-Vote count analytics
+
+📸 Sample Visualizations:
+
 The analysis includes multiple visualization types:
 
-Genre Distribution: Bar charts showing frequency of each genre
+-Genre Distribution: Bar charts showing frequency of each genre
 
-Popularity Trends: Line graphs tracking popularity over time
+-Popularity Trends: Line graphs tracking popularity over time
 
-Rating Analysis: Histograms of vote averages and distributions
+-Rating Analysis: Histograms of vote averages and distributions
 
-Vote Count Patterns: Scatter plots correlating votes with ratings
+-Vote Count Patterns: Scatter plots correlating votes with ratings
 
-💡 Use Cases
-Content Strategy: Identify popular genres for content acquisition
+💡 Use Cases:
 
-Audience Insights: Understand viewer preferences and engagement patterns
+-Content Strategy: Identify popular genres for content acquisition
 
-Trend Forecasting: Predict future content trends based on historical data
+-Audience Insights: Understand viewer preferences and engagement patterns
 
-Performance Benchmarking: Compare movie performance metrics
+-Trend Forecasting: Predict future content trends based on historical data
 
-Market Analysis: Analyze competitive landscape in streaming content
+-Performance Benchmarking: Compare movie performance metrics
 
-🔮 Future Enhancements
- Add sentiment analysis on movie descriptions
+-Market Analysis: Analyze competitive landscape in streaming content
 
- Implement machine learning models for popularity prediction
+🔮 Future Enhancements:
 
- Include regional/language-based analysis
+ -Add sentiment analysis on movie descriptions
 
- Add more granular time-series forecasting
+ -Implement machine learning models for popularity prediction
 
- Integrate real-time data updates
+ -Include regional/language-based analysis
 
-📝 Lessons Learned
-Importance of systematic data cleaning for accurate analysis
+ -Add more granular time-series forecasting
 
-Value of categorical segmentation for pattern identification
+ -Integrate real-time data updates
 
-Power of combined Python + Power BI approach for comprehensive analysis
+📝 Lessons Learned:
 
-Genre normalization crucial for accurate frequency analysis
+-Importance of systematic data cleaning for accurate analysis
+
+-Value of categorical segmentation for pattern identification
+
+-Power of combined Python + Power BI approach for comprehensive analysis
+
+-Genre normalization crucial for accurate frequency analysis
