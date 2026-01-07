@@ -7,7 +7,7 @@ This project transforms raw Netflix movie data into meaningful insights through 
 
 ✨ Features:
 
--Data Cleaning & Preprocessing: Handled missing values, removed duplicates, and standardized date formats
+- Data Cleaning & Preprocessing: Handled missing values, removed duplicates, and standardized date formats
 
 -Exploratory Data Analysis: Statistical analysis of movie ratings, popularity scores, and vote counts
 
