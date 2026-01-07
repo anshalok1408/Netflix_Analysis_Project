@@ -36,10 +36,6 @@ Business Intelligence:
 
 Power BI - Interactive dashboard creation
 
-Data Format:
-
-CSV - Data storage and exchange
-
 📁 Project Structure:
 text
 netflix-analysis/
