@@ -1,10 +1,12 @@
 Netflix Movies Data Analysis
 A comprehensive data analysis project that cleans, analyzes, and visualizes Netflix movie data using Python and Power BI to extract actionable insights about content trends, ratings, and genre popularity.
 
-📊 Project Overview
+📊 Project Overview:
+
 This project transforms raw Netflix movie data into meaningful insights through systematic data cleaning, exploratory data analysis (EDA), and interactive visualizations. The analysis reveals patterns in movie popularity, genre distribution, release trends, and audience ratings.
 
-✨ Features
+✨ Features:
+
 Data Cleaning & Preprocessing: Handled missing values, removed duplicates, and standardized date formats
 
 Exploratory Data Analysis: Statistical analysis of movie ratings, popularity scores, and vote counts
@@ -38,7 +40,7 @@ Data Format:
 
 CSV - Data storage and exchange
 
-📁 Project Structure
+📁 Project Structure:
 text
 netflix-analysis/
 │
@@ -56,8 +58,10 @@ Popularity	Popularity score metric
 Vote_Count	Total number of user votes
 Vote_Average	Categorized rating (Famous, Average, Below Average, Not Popular)
 Genre	Movie genre(s) - exploded for multi-genre entries
-🔍 Key Insights
-Data Cleaning Process
+
+🔍 Key Insights:
+
+Data Cleaning Process-
 Date Conversion: Transformed Release_Date from full date format to year-only format
 
 Column Removal: Dropped non-essential columns (Overview, Original_Language, Poster_Url)
@@ -97,21 +101,9 @@ pandas >= 1.3.0
 numpy >= 1.21.0
 matplotlib >= 3.4.0
 seaborn >= 0.11.0
-Installation
-Clone the repository
 
-bash
-git clone https://github.com/yourusername/netflix-analysis.git
-cd netflix-analysis
-Install required packages
+📊 Analysis Workflow:
 
-bash
-pip install pandas numpy matplotlib seaborn jupyter
-Open the Jupyter notebook
-
-bash
-jupyter notebook Netflix-Analysis.ipynb
-📊 Analysis Workflow
 1. Data Loading & Inspection
 python
 import pandas as pd
